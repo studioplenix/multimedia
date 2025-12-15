@@ -1,0 +1,284 @@
+/* ---------------------------
+   ESTILOS GENERALES
+   - Reset de márgenes, rellenos y box-sizing
+   - Se aplica la fuente global
+---------------------------- */
+* {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+    box-sizing: border-box; /* Hace que width incluya padding y border */
+    font-family: "Poppins", sans-serif; /* Fuente principal del sitio */
+}
+
+body {
+    background-color: #f5f6f7; /* Color gris claro del fondo */
+    color: #333; /* Color de texto principal */
+}
+
+/* Links generales */
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+/* ---------------------------------------------------
+   NAVBAR (barra de navegación fija arriba)
+--------------------------------------------------- */
+header {
+    width: 100%; /* Ocupa todo el ancho */
+    position: fixed; /* Permanece fija en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Asegura que quede frente al contenido */
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    padding: 20px 0;
+    background: transparent; /* Fondo transparente */
+}
+
+header div {
+    display: flex; /* Alineación de ítems */
+    gap: 35px; /* Separación entre botones */
+    padding: 12px 28px;
+    background: #fff; /* Fondo blanco de la burbuja del menú */
+    border-radius: 40px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+header a {
+    font-weight: 600; /* Texto más grueso */
+    display: flex; /* Ícono + texto alineados */
+    align-items: center;
+    gap: 6px; /* Espacio entre ícono y texto */
+}
+
+header img{
+    border-radius: 20%; /* Redondeo para imágenes en la navbar si existieran */
+}
+
+/* Botones generales reutilizables */
+.btn {
+    display: inline-flex; /* Ícono + texto */
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 50px; /* Bordes totalmente redondeados */
+    background: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-weight: 500;
+    transition: .3s ease; /* Transición suave para el hover */
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background: #fff; /* Cambia a blanco */
+    color: #000; /* Texto negro */
+    border-color: #000; /* Línea negra */
+}
+
+
+/* ---------------------------
+   SECCIÓN INICIO
+---------------------------- */
+#inicio {
+    padding: 225px 12%; /* Espacio superior para compensar el header fijo */
+}
+
+.contenedor-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Espacio entre texto y foto */
+}
+
+.texto-de-precentación h1 {
+    font-size: 3.5rem; /* Título grande */
+    font-weight: 700;
+    color: #222;
+}
+
+.texto-de-precentación p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px; /* Limita el ancho del texto */
+}
+
+.botones {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+hr {
+    margin: 35px 0;
+    border: none;
+    border-bottom: 1px solid #ddd; /* Línea divisora */
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.redes a {
+    font-size: 1.5rem; /* Tamaño grande del ícono */
+    margin-right: 15px;
+    opacity: 0.7; /* Opacidad suave */
+    transition: .3s;
+}
+
+.redes a:hover {
+    opacity: 1; /* Ícono más visible */
+}
+
+.foto img {
+    width: 550px;
+    border-radius: 30px; /* Esquinas redondeadas de la imagen */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra para profundidad */
+}
+
+
+/* ---------------------------
+   SECCIÓN ACERCA
+---------------------------- */
+#acerca {
+    padding: 140px 8%;
+}
+
+.contenedor-acerca {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.contenedor-acerca .foto img {
+    width: 550px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.info-acerca{
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+.info-acerca h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+.info-acerca h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+}
+
+.info-acerca p {
+    max-width: 600px;
+    color: #555;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* ----------------------------------
+   HABILIDADES (chips / etiquetas)
+----------------------------------- */
+.habilidades {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap; /* Se acomodan varias líneas */
+    gap: 12px;
+}
+
+.habilidades button {
+    padding: 8px 18px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #ddd; /* Línea suave */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    cursor: default;
+    font-size: 0.9rem;
+    transition: .2s ease;
+}
+
+.habilidades button:hover {
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* ---------------------------
+   SECCIÓN PROYECTOS
+---------------------------- */
+#proyectos{
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif; /* Corrige comillas incorrectas */
+}
+
+.contenedor-de-proyectos{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-de-proyectos h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.contenedor-de-proyectos p{
+    margin-top: 15px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.tarjetas-de-proyectos{
+    margin-top: 40px;
+    display: grid; /* Sistema de tarjetas responsivas */
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /* CORREGIDO: espacio extra en minmax */
+    gap: 35px;
+}
+
+/* TARJETA */
+.tarjetas-de-proyectos div {
+    background: #ffffff;
+    border-radius: 26px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding-bottom: 25px;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+
+.tarjetas-de-proyectos div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+}
+
+/* IMAGEN */
+.tarjetas-de-proyectos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* La imagen se recorta sin deformarse */
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* TITULO */
+.tarjetas-de-proyectos h2 {
+    padding: 18px 22px 5px 22px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* DESCRIPCIÓN */
+.tarjetas-de-proyectos p {
+    padding: 0 22px;
+    color: #555;
+    font-size: 0.95
+}
+

@@ -1,0 +1,334 @@
+/* ---------------------------
+   ESTILOS GENERALES
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f6f7;
+    color: #333;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: transparent;
+}
+
+header div {
+    display: flex;
+    gap: 35px;
+    padding: 12px 28px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+header a {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header img{
+    border-radius: 20%;
+}
+
+/* Botones generales */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+
+/* ---------------------------
+   SECCIÓN INICIO
+---------------------------- */
+
+#inicio {
+    padding: 225px 12%;
+}
+
+.contenedor-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.texto-de-precentación h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.texto-de-precentación p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+}
+
+.botones {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+hr {
+    margin: 35px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+h5 {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.redes a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.redes a:hover {
+    opacity: 1;
+}
+
+.foto img {
+    width: 550px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ---------------------------
+   SECCIÓN ACERCA
+---------------------------- */
+
+#acerca {
+    padding: 140px 8%;
+}
+
+.contenedor-acerca {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.contenedor-acerca .foto img {
+    width: 550px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.info-acerca{
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+.info-acerca h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+.info-acerca h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+}
+
+.info-acerca p {
+    margin-top: 0%;
+    max-width: 600px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ----------------------------------
+   HABILIDADES (chips / etiquetas)
+----------------------------------- */
+
+.habilidades {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.habilidades button {
+    padding: 8px 18px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    cursor: default;
+    font-size: 0.9rem;
+    transition: .2s ease;
+}
+
+.habilidades button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* ---------------------------
+   SECCIÓN PROYECTOS
+---------------------------- */
+
+#proyectos{
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: ¨Poppins¨ sans-serif;
+}
+
+.contenedor-de-proyectos{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-de-proyectos h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f1f1f;
+
+}
+
+.contenedor-de-proyectos p{
+    margin-top: 15px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.tarjetas-de-proyectos{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (330px, 1fr));
+    gap: 35px;
+}
+
+/* TARJETA */
+.tarjetas-de-proyectos div {
+    background: #ffffff;
+    border-radius: 26px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding-bottom: 25px;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+
+.tarjetas-de-proyectos div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+}
+
+/* IMAGEN */
+.tarjetas-de-proyectos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* TITULO */
+.tarjetas-de-proyectos h2 {
+    padding: 18px 22px 5px 22px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* DESCRIPCIÓN */
+.tarjetas-de-proyectos p {
+    padding: 0 22px;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.programas{
+    margin: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #555;
+    align-items: center;
+    align-content: center;
+}
+
+/* PROGRAMAS / TAGS */
+.tarjetas-de-proyectos {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.tarjetas-de-proyectos button {
+    border: none;
+    padding: 6px 12px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 600;
+    
+}
+
+/* BOTÓN VER PROYECTO */
+.ver-proyecto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 22px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #121212;
+}
+
+.ver-proyecto i {
+    font-size: 1rem;
+}
