@@ -541,7 +541,7 @@ footer{
 
     .contenedor-inicio {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .texto-de-precentación h1 {
@@ -553,7 +553,7 @@ footer{
     }
 
     .botones {
-        justify-content: center;
+        justify-content: left;
         flex-wrap: wrap;
     }
 
@@ -568,7 +568,7 @@ footer{
 
     .contenedor-acerca {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .info-acerca {
@@ -584,7 +584,7 @@ footer{
     }
 
     #proyectos {
-        padding: 160px 20px;
+        padding: 130px 20px;
     }
 
     .contenedor-de-proyectos h1 {
@@ -688,3 +688,4 @@ footer{
         max-width: 1400px;
     }
 }
+
