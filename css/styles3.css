@@ -528,7 +528,7 @@ footer{
         gap: 15px;
         padding: 10px 18px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
     }
 
     header a span {
@@ -688,4 +688,5 @@ footer{
         max-width: 1400px;
     }
 }
+
 
