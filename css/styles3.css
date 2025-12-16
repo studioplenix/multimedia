@@ -536,7 +536,7 @@ footer{
     }
 
     #inicio {
-        padding: 150px 6% 80px;
+        padding: 125px 6% 80px;
     }
 
     .contenedor-inicio {
@@ -559,7 +559,7 @@ footer{
 
     .foto img {
         width: 100%;
-        max-width: 320px;
+        max-width: 250px;
     }
 
     #acerca {
@@ -600,9 +600,9 @@ footer{
     }
 
     .contenedor-f {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 40px;
-        text-align: center;
+        text-align: left;
     }
 
     .info-f p {
@@ -688,5 +688,6 @@ footer{
         max-width: 1400px;
     }
 }
+
 
 
