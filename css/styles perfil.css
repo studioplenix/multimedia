@@ -1,0 +1,69 @@
+/* Sección de Acerca */
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+#acerca {
+    padding: 160px 8%;
+}
+
+.contenedor-acerca {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.contenedor-acerca .foto img {
+    width: 550px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.info-acerca{
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+.info-acerca h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.info-acerca h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: #000000;
+}
+
+.info-acerca p {
+    margin-top: 0%;
+    max-width: 600px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.habilidades {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.habilidades button {
+    padding: 8px 18px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    cursor: default;
+    font-size: 0.9rem;
+    transition: .2s ease;
+}
+
+.habilidades button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
